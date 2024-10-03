@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sevaria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+    
+    
+</head>
+<body>
+    
+    
+    
+      {% include "navigation/header.html" %}
+    <main class="container">
+      {% block content %} {% endblock content %}
+      
+     
+    </main>
+      {% include 'navigation/footer.html' %}
+    
+  
+    
+
+</body>
+</html>
