@@ -17,6 +17,7 @@
     padding-right: 0 !important;
     color: #F5F5F5;
 }
+/* nav bar and menu*/
 .nav-holder{
     display: flex;
     flex-direction: row;
@@ -31,9 +32,9 @@
     border-radius: 30px;
     font-size:medium;
     color: white;
-    width: 80px;
-    height: 40px;
     margin-right: 20px;
+    border: 2px solid black;
+    padding: 10px 20px;
 }
 .signInBtn:hover{
     cursor:pointer;
@@ -48,6 +49,76 @@
 }
 .menuBtn:hover{
     cursor:pointer;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 60px; /* Adjust based on the height of the navbar */
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Smooth expand effect */
+    z-index: 999;
+    color: white;
+    padding: 10px;
+}
+
+.nav-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-menu ul li a:hover {
+    color: #fcf9e8; /* Change color on hover */
+}
+
+/* Show the nav menu when active */
+.nav-menu.active {
+    top: 0px;
+    opacity: 1;
+    height: max-content; /* Adjust based on the number of items in the menu */
+}
+
+.nav-menu.active ul {
+    opacity: 1;
+}
+.nav-menu-top{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+.nav-menu-close-button button{
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+}
+.nav-menu-holder{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.nav-menu-left{
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu-left ul{display: flex;flex-direction: column;align-items: start;}
+.nav-menu-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .section-home{
@@ -83,6 +154,9 @@
     border: 2px solid #333; /* Optional styling */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+.bottom-left-video.close-video{
+    display: none;
 }
 .close-video{
     position: fixed;
