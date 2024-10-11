@@ -11,6 +11,7 @@
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scroll */
     font-family: 'Italiana', serif;
+    scroll-behavior: smooth;
 }
 .container-xxl {
     padding-left: 0 !important;
@@ -18,6 +19,12 @@
     color: #F5F5F5;
 }
 /* nav bar and menu*/
+
+.navbar {
+    transition: top 0.3s ease; /* Smooth transition for hiding and showing */
+    
+}
+
 .nav-holder{
     display: flex;
     flex-direction: row;
@@ -50,17 +57,16 @@
 .menuBtn:hover{
     cursor:pointer;
 }
-
 .nav-menu {
     position: absolute;
-    top: 60px; /* Adjust based on the height of the navbar */
+    top: 0px; /* Adjust based on the height of the navbar */
     left: 0;
     width: 100%;
     height: 0;
     opacity: 0;
     background-color: black;
     overflow: hidden;
-    transition: height 0.5s ease; /* Smooth expand effect */
+    transition: height 1s ease, opacity 1s ease; /* Smooth expand effect */
     z-index: 999;
     color: white;
     padding: 10px;
@@ -71,12 +77,12 @@
     margin: 0;
     list-style: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease; /* Opacity transition */
 }
 
 .nav-menu ul li {
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
 }
 
 .nav-menu ul li a {
@@ -89,38 +95,57 @@
     color: #fcf9e8; /* Change color on hover */
 }
 
-/* Show the nav menu when active */
+/* Active state that slides the menu down */
 .nav-menu.active {
-    top: 0px;
+    top: 0px; /* Keep it aligned with the top */
     opacity: 1;
-    height: max-content; /* Adjust based on the number of items in the menu */
 }
 
 .nav-menu.active ul {
     opacity: 1;
+    cursor: pointer;
 }
-.nav-menu-top{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
-.nav-menu-close-button button{
+
+.nav-menu-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-close-button button {
     padding: 10px 10px;
     border: none;
     background-color: transparent;
 }
-.nav-menu-holder{
+
+.nav-menu-holder {
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 10px;
+    padding-bottom: 28px;
 }
-.nav-menu-left{
+
+.nav-menu-left {
     display: flex;
     flex-direction: column;
 }
-.nav-menu-left ul{display: flex;flex-direction: column;align-items: start;}
-.nav-menu-right{
+
+.nav-menu-left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.nav-menu-right {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
+.nav-menu-right video{
+    border-radius: 30px;
+}
 .section-home{
     width: 100%;
     height: 100vh;
@@ -181,7 +206,7 @@
 }
 .index-content{
     width:100%;
-    height: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,7 +221,7 @@
     font-size: medium;
     color: #888585;
     width: 100%;
-    height: max-content;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -233,11 +258,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
 }
 .intro-video-display video{
     width: 80%;
     border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 video:hover{
     cursor: pointer;
@@ -556,7 +582,7 @@ video:hover{
 }
 .footer-mid h1{
     color: #E5E3D5;
-    font-size: 150px;
+    font-size: 180px;
 }
 
 .footer-bottom{
@@ -580,3 +606,29 @@ video:hover{
     font-family: fangsong;
 }
 .footer-links {display: flex;flex-direction: row;justify-content: space-between;width: 300px;}
+
+
+/* Custom scrollbar for WebKit browsers */
+.scroll-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  /* Custom scrollbar for Firefox */
+  .scroll-container {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+  }
+  
