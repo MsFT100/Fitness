@@ -1,0 +1,144 @@
+@media screen and (max-width: 768px) {
+    .overlay-text {
+        
+        font-size: 90px;
+    }
+    .signInBtn{
+        
+        background-color: white;
+                
+        color: black;
+    }
+    .index-content p {
+
+        text-align: center;
+    }
+    .menuBtn {
+
+    }
+    .overlay-paragraph{
+        flex-direction: column;
+        height: 30%;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    .scroll-down-btn {
+        
+        position: relative;
+                
+        left: 300px;
+    }
+    .overlay{
+        
+        justify-content: flex-end;
+    }
+    .overlay-paragraph p{
+        width: 100%;
+    }
+    .about-content {
+        background-color: #F5EBE0;
+    }
+    .about-content p{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .intro-video-display{
+        background-color: #F5EBE0;
+    }
+    .features-content h2{
+        font-size: xx-large;
+    }
+    .features-content p{
+        font-size: large;
+    }
+    .footer-upper-section {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 10px;
+
+    padding-top: 60px;
+
+    }
+    .footer-upper-section {
+        flex-direction: column;
+    }
+    .footer-left{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .footer-left h4{
+        font-size: xx-large;
+    }
+    .form-footer{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .form-footer input{
+        width: 335px;
+    }
+    .form-footer button {
+        
+        padding: 15px 140px;
+                
+        margin-top: 20px;
+    }
+    .footer-mid-left{
+
+    font-size: 60px;
+
+    }
+    .footer-mid-right{
+        
+    font-size: 60px;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .overlay-about-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-page-content {
+        width: 100%;
+    }
+    .about-page-view {
+        width: 100%;
+    }
+    .about-page-content-top h1 {
+        
+        font-size: x-large;
+                
+        text-align: center;
+    }
+    .about-page-content-top p {
+        
+        font-size: medium;
+                
+        text-align: center;
+    }
+    .about-page-content-bottom h1 {
+        font-size: larger;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    
+}

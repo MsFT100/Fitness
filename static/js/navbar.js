@@ -43,18 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+  // Handling navbar auto-hide
+  let prevScrollpos = window.scrollY; // Use window.scrollY instead of window.pageYOffset
 
-  //handling navbar autohide
-  let prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
+
+    console.log("Scrolling up, showing navbar");
+      let currentScrollPos = window.scrollY; // Use window.scrollY here as well
+      if (prevScrollpos > currentScrollPos) {
+          // Scrolling up, show the navbar
+          console.log("Scrolling up, showing navbar");
+          document.getElementById("navbar").style.top = "0";
+      } else {
+          // Scrolling down, hide the navbar
+          console.log("Scrolling down, hiding navbar");
+          document.getElementById("navbar").style.top = "-50px";  // Adjust based on navbar height
+      }
+      prevScrollpos = currentScrollPos;
+  };
+
 
 });
 

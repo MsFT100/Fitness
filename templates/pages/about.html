@@ -1,0 +1,126 @@
+{% extends "navigation/base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="container-xxl" id='section-1'>
+    <div class="section-home">
+        <div class="overlay">
+            <!-- Your content goes here -->
+            <div class="index-content" id="content-index">
+                <h1 class="overlay-text">MEET</h1>
+                <h1 class="overlay-text">PHOEBE</h1>
+                <p>Empowering you to achieve your fitness goals through personalized training and unwavering support.</p>
+            </div>
+            <div class="overlay-paragraph">
+                <p>Experience personalized training that adapts to your unique goals. Join us to unlock your potential and achieve lasting results.</p>
+                <!-- Scroll down button -->
+                <div class="scroll-down-btn" onclick="scrollToNextSection()">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                    </svg>-->
+                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5762 32.0479L32.5762 24.0479L29.7762 21.2479L26.5762 24.4479V16.0479H22.5762V24.4479L19.3762 21.2479L16.5762 24.0479L24.5762 32.0479ZM24.5762 44.0479C21.8095 44.0479 19.2095 43.5229 16.7762 42.4729C14.3428 41.4229 12.2262 39.9979 10.4262 38.1979C8.62617 36.3979 7.20117 34.2812 6.15117 31.8479C5.10117 29.4145 4.57617 26.8145 4.57617 24.0479C4.57617 21.2812 5.10117 18.6812 6.15117 16.2479C7.20117 13.8145 8.62617 11.6979 10.4262 9.89785C12.2262 8.09785 14.3428 6.67285 16.7762 5.62285C19.2095 4.57285 21.8095 4.04785 24.5762 4.04785C27.3428 4.04785 29.9428 4.57285 32.3762 5.62285C34.8095 6.67285 36.9262 8.09785 38.7262 9.89785C40.5262 11.6979 41.9512 13.8145 43.0012 16.2479C44.0512 18.6812 44.5762 21.2812 44.5762 24.0479C44.5762 26.8145 44.0512 29.4145 43.0012 31.8479C41.9512 34.2812 40.5262 36.3979 38.7262 38.1979C36.9262 39.9979 34.8095 41.4229 32.3762 42.4729C29.9428 43.5229 27.3428 44.0479 24.5762 44.0479ZM24.5762 40.0479C29.0428 40.0479 32.8262 38.4979 35.9262 35.3979C39.0262 32.2979 40.5762 28.5145 40.5762 24.0479C40.5762 19.5812 39.0262 15.7979 35.9262 12.6979C32.8262 9.59785 29.0428 8.04785 24.5762 8.04785C20.1095 8.04785 16.3262 9.59785 13.2262 12.6979C10.1262 15.7979 8.57617 19.5812 8.57617 24.0479C8.57617 28.5145 10.1262 32.2979 13.2262 35.3979C16.3262 38.4979 20.1095 40.0479 24.5762 40.0479Z" fill="white"/>
+                        </svg>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+</section>
+
+<!-- Another section to scroll to -->
+<section class="container-xxl" id="section-2">
+    <div class="overlay-about-page">
+        <div class="about-page-content">
+            <div class="about-page-content-top">
+                <h1>Transforming Lives Through Personalized Training and Innovative Methodologies</h1>
+                <p>Pheobe is known for her challenging reformer classes that combine slow, repetitive movements with quick transitions to boost heart rates while remaining low-impact. Her routines target and fatigue each muscle group, ensuring clients feel strong and see results. “My classes are intense, and I aim for you to feel a true burn.”
+                    Through Pilates by Pheobe, she fosters personal connections and a community among her clients. This approach has attracted high-profile followers like Sofia Richie and Rita Ora.
+                    Now, Pheobe is launching Core Club, an app featuring her signature mat-based Pilates classes for all skill levels, including pre and postnatal options. Welcome to the club!
+                </p>
+            </div>
+            <div class="about-page-content-bottom">
+                <div class="container">
+                    <h1>Personalized Plans</h1>
+                    <p>
+                        Every program is customized to fit your individual fitness journey and aspirations.
+                    </p>
+                </div>
+                <div class="container">
+                    <h1>Continous support</h1>
+                    <p>
+                        I’m here to motivate and guide you every step of the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-page-view">
+            <div class="container">
+                <img src="{% static '/images/profile_mimic.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Another section to scroll to -->
+<section class="container-xxl" id="section-3">
+      <!-- Reviews section -->
+      <div class="reviews-container">
+        <div class="container">
+            <h2>Training Highlights</h2>
+            <p>Explore my journey and client success stories here</p>
+        </div>
+        <div class="reviews-scroll">
+            
+            <div class="d-flex justify-content-around">
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                    
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                
+            
+            
+                
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">  
+            
+            
+                
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                    
+                
+                
+                    
+                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+                    
+                
+            </div>
+            <!-- Repeat for more reviews -->
+        </div>
+    </div>
+</section>
+
+<!-- Book section -->
+<section class="container-xxl" id="section-2">
+    <div class="section-home">
+        <div class="overlay-2">
+            <div class="index-content">
+                <h2>Let's Transform Your Fitness Journey</h2>
+                <p>Reach out today to learn more about personalized training sessions tailored for you</p>
+            </div>
+            <div class="session-display">
+                <button class="bookBtn">Contact</button>
+                <button class="learnBtn">Book Now</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</section>
+
+{% endblock content %}

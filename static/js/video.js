@@ -1,29 +1,21 @@
-document.addEventListener('scroll', function() {
-    const section = document.getElementById('section-2');
-    const video = document.querySelector('.video');
-    const text = document.querySelector('.about-content');
-    
-    // Get the amount of scrolling
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const sectionHeight = section.offsetHeight;
-    const windowHeight = window.innerHeight;
-    
-    // Calculate how far we are from the top of the section
-    const distanceFromTop = section.getBoundingClientRect().top;
-    
-    if (distanceFromTop < 0) {
-        // Calculate how much to scale the video based on scroll position
-        const scrollFactor = Math.min(Math.abs(distanceFromTop) / windowHeight, 1);
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('scroll', function () {
+        const aboutContent = document.querySelector('.about-content');
+        const videoContainer = document.querySelector('.intro-video-display');
+        const video = document.querySelector('.intro-video-display video');
         
-        // Scale the video and hide text based on scrollFactor
-        video.style.transform = `scale(${1 + scrollFactor})`; // 1 is original size, add scrollFactor to scale
-        text.style.opacity = `${1 - scrollFactor}`; // Fade out text
-        
-        // Add a class when the video is fully stretched
-        if (scrollFactor >= 1) {
-            video.classList.add('fullscreen');
+        // Get the scroll position
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if the user has scrolled enough to trigger the video scale effect
+        if (scrollTop > 100) {
+            console.log("Teboo");
+            aboutContent.classList.add('hidden');  // Hide the text
+            videoContainer.classList.add('scaled-video');  // Scale the video
         } else {
-            video.classList.remove('fullscreen');
+            console.log("Yeboo");
+            aboutContent.classList.remove('hidden');  // Show the text again
+            videoContainer.classList.remove('scaled-video');  // Reset video scaling
         }
-    }
+    });
 });

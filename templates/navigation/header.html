@@ -2,7 +2,7 @@
 {% block content %}
 
 <header>
-  <nav  id="navbar" class="navbar navbar-dark bg-dark">
+  <nav  id="navbar" class="navbar">
     <div class="container-fluid">
         <div class="navbar-brand">
             <a href="{% url 'home' %}">
@@ -62,13 +62,13 @@
                     <h2>WORKOUTS</h2>
                     <ul>
                         <li>PHOEBE CLUB</li>
-                        <li>BOOK SESSIONS</li>
+                        <li><a href="{% url "session" %}">SESSIONS</a></li>
                     </ul>
                 </li>
                 <li>
                     <h2>INFO</h2>
                     <ul>
-                        <li>ABOUT PHOEBE</li>
+                        <li><a href="{% url "about" %}">ABOUT PHOEBE</a></li>
                         <li>REVIEWS</li>
                     </ul>
                 </li>
