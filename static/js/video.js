@@ -19,3 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function CloseVideo() {
+    const video = document.querySelector('.bottom-left-video');
+    if (video) {
+        video.style.display = 'none';  // Hide the video
+    }
+    console.log("Video closed");
+}
+
+function scrollToNextSection() {
+    // Scroll to the next section (section-2)
+    const nextSection = document.getElementById('section-2');
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+}

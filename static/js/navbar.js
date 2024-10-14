@@ -63,7 +63,35 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
+  const reviewsScroll = document.querySelector('.reviews-scroll');
+  const reviewsContainer = document.querySelector('.reviews-container');
+
+  // Set the animation direction based on the scroll position
+  function setAnimationDirection() {
+    const scrollPosition = reviewsScroll.scrollLeft;
+    const containerWidth = reviewsContainer.offsetWidth;
+    const scrollWidth = reviewsScroll.scrollWidth;
+
+    if (scrollPosition >= scrollWidth - containerWidth) {
+      reviewsScroll.classList.add('animate-left');
+      reviewsScroll.classList.remove('animate-right');
+    } else if (scrollPosition <= 0) {
+      reviewsScroll.classList.add('animate-right');
+      reviewsScroll.classList.remove('animate-left');
+    }
+  }
+
+  // Add event listeners for scrolling and animation end
+  reviewsScroll.addEventListener('scroll', setAnimationDirection);
+  reviewsScroll.addEventListener('animationend', setAnimationDirection);
+
+  // Initialize the animation direction
+  //setAnimationDirection();
+
 });
+
+
+
 
 
 

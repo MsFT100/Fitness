@@ -15,6 +15,10 @@
     scrollbar-width: thin;
     scrollbar-color: #333 #ffffff;
 }
+
+header{
+    background-color: #5b1010;
+}
 .istok-web-regular {
     font-family: "Istok Web", sans-serif;
     font-weight: 400;
@@ -43,17 +47,27 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     color: #F5F5F5;
+    height: max-content;
 }
 /* nav bar and menu*/
 
-.navbar {
-    position: fixed !important; /* Make sure the navbar is fixed */
+#navbar {
+    position: fixed; /* Make sure the navbar is fixed */
     top: 0; /* Start at the top */
-    left: 0; /* Align to the left */
     width: 100%; /* Full width */
     z-index: 1000; /* Keep it above other content */
     transition: top 0.3s ease; /* Smooth transition for the top property */
     background-color: transparent;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar .container-fluid {
+    display: flex;
+    align-items: center;
 }
 
 .nav-holder{
@@ -183,6 +197,9 @@
     background-image: url(/static/images/ModelImage.jpg);
     background-size: cover;
     position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: aqua;
 }
 .section-about{
     width: 100%;
@@ -425,6 +442,7 @@
     height: 100%;
     padding: 20px;
     background-color: #f8f9fa; /* Light background color */
+    overflow: hidden;
 }
 
 .reviews-title {
@@ -494,6 +512,7 @@
     scrollbar-color: #000000 white; /* Custom scrollbar colors */
     scrollbar-width: thin; /* For Firefox */
     gap: 20px; /* Space between reviews */
+    transition: transform 0.5s ease-in-out;
 }
 
 .review-card {
@@ -576,7 +595,88 @@
     color: #F5F5F5;
     border: 2px solid transparent;
 }
+.learnBtn a{
+    text-decoration: none;
+    color: white;
+}
 
+.overlay-pricing-plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #F5EBE0;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.content-pricing-plans{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.pricing-cards{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 100%;
+    color: black;
+}
+.pricing-cards .card{
+    border: 1px solid rgb(0 0 0);
+    border-radius: 30px;
+    background-color: transparent;
+    height: 420px;
+}
+.section-pricing-plans{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+    background-color: #F5EBE0;
+    position: relative;
+}
+.card-title{
+    text-align: center !important;
+}
+.card-text{
+    text-align: center !important;
+    font-family: 'Istok Web';
+}
+.card-body ul{
+    font-family: 'Istok Web';
+    list-style-type: none;
+    padding-left: 0px;
+}
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav-pills .nav-link.active{
+    
+    background-color: #000000 !important;
+}
+.btn-pricing{
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Istok Web';
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 10px;
+    transition: all 0.3s;
+    text-align: center;
+}
+.btn-pricing:hover{
+    color: black;
+    background-color: #F5EBE0;
+    border: 2px #000000;
+}
+.d-flex justify-content-between{
+    justify-content: center;
+}
 
 
 /*footer*/
@@ -829,6 +929,7 @@
   .container p{
     color: black;
     text-align: left;
+    font-size: medium;
   }
   .container img{
     border-radius: 30px;
@@ -885,5 +986,36 @@
     text-align: left;
     color: black;
     text-decoration: underline;
+  }
+  .nav-menu-right video{
+    cursor: pointer;
+}
+
+/* Animation for scrolling from left to right */
+.reviews-scroll.animate-left {
+    animation: scroll-left 10s linear infinite;
+  }
+  
+  /* Animation for scrolling from right to left */
+  .reviews-scroll.animate-right {
+    animation: scroll-right 10s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   

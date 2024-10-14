@@ -9,6 +9,9 @@ class Index(View):
 class AboutPage(View):
     def get(self, request):
         return render(request, 'pages/about.html')
-class SessionsPage(View):
+class BookSessionsPage(View):
     def get(self, request):
-        return render(request, 'pages/session.html')
+        return render(request, 'pages/book_session.html')
+class PrivateSessionsPage(View):
+    def get(self, request):
+        return render(request, 'pages/private_session.html')

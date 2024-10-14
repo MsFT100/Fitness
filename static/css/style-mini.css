@@ -121,9 +121,9 @@
     }
     .about-page-content-top h1 {
         
-        font-size: x-large;
-                
-        text-align: center;
+font-size: xx-large;
+        
+text-align: center;
     }
     .about-page-content-top p {
         
@@ -132,13 +132,74 @@
         text-align: center;
     }
     .about-page-content-bottom h1 {
-        font-size: larger;
+        font-size: x-large;
     }
-
+    .nav-menu-holder {
+        flex-direction: column;
+    }
+   
+    .bottom-left-video{
+        display: none;
+    }
+    .close-video{
+        display: none;
+    }
+    .reviews-scroll {
+        
+    }
+    .reviews-scroll img {
+        width: 100%;
+    }
+    .index-content h2 {
+        padding-left: .7rem;
+        padding-right: .7rem;
+        text-align: center;
+    }
+    .index-content p {
+        padding-left: .7rem;
+        padding-right: .7rem;
+        text-align: center;
+    }
+    .content-pricing-plans h2{
+        text-align: center;
+        margin-top: 2rem;
+    }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+    .bottom-left-video{
+        display: none;
+    }
+    .close-video{
+        display: none;
+    }
+    .reviews-scroll {
+        
+    }
+    
+    
+}
+@media screen and (max-width: 1000px) {
+    .pricing-cards{
+        display: flex;
+        flex-direction: column !important;
+        
+    }
+    
+    .overlay-pricing-plans {
+        display: flex;
+        flex-direction: column !important;
+        height: max-content;
+    }
+    .justify-content-around {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricing-cards .card {
+        margin-top: 3rem;
+    }
     
     
 }
