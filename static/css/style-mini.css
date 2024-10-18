@@ -74,6 +74,7 @@
     }
     .footer-right{
         width: 100%;
+        justify-content: center;
     }
     .footer-left h4{
         font-size: xx-large;
@@ -127,9 +128,9 @@ text-align: center;
     }
     .about-page-content-top p {
         
-        font-size: medium;
-                
-        text-align: center;
+font-size: medium;
+        
+text-align: left;
     }
     .about-page-content-bottom h1 {
         font-size: x-large;
@@ -146,10 +147,11 @@ text-align: center;
     }
     .reviews-scroll {
         
+align-items: center;
+        
+justify-content: center;
     }
-    .reviews-scroll img {
-        width: 100%;
-    }
+    
     .index-content h2 {
         padding-left: .7rem;
         padding-right: .7rem;
@@ -164,6 +166,21 @@ text-align: center;
         text-align: center;
         margin-top: 2rem;
     }
+    .container-club{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 2rem;
+    }
+    .container-club .image-club-left{
+        width: 100%;
+        height: auto;
+    }
+    .about-page-content-bottom{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
 
 }
 
@@ -176,6 +193,7 @@ text-align: center;
     }
     .reviews-scroll {
         
+max-height: 500px;
     }
     
     

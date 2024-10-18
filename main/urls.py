@@ -6,4 +6,6 @@ urlpatterns = [
     path('about/', views.AboutPage.as_view(), name='about'),
     path('sessions/book/', views.BookSessionsPage.as_view(), name='session'),
     path('sessions/private/', views.PrivateSessionsPage.as_view(), name='book_session'),
+    path('club/', views.PhoebeClubPage.as_view(), name='club'),
+
 ]

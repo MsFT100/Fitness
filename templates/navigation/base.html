@@ -21,26 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <script>
-      // Animate the header based on scroll
-      document.addEventListener('DOMContentLoaded', function() {
-        var prevScrollpos = window.pageYOffset;
-        console.log("@@@@");
-        // Event listener for the scroll event
-        window.onscroll = function() {
-          var currentScrollPos = window.pageYOffset;
-          
-          // Logic to hide or show the navbar based on scroll direction
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0"; // Show navbar
-            
-          } else {
-            document.getElementById("navbar").style.top = "-50px"; // Hide navbar
-          }
-          prevScrollpos = currentScrollPos;
-        };
-      });
-    </script>
+    
 
   </head>
 
@@ -54,9 +35,9 @@
     
     
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          document.addEventListener('scroll', function () {
-              const aboutContent = document.querySelector('.about-content');
+      /*document.addEventListener('DOMContentLoaded', function() {
+      //    document.addEventListener('scroll', function () {
+      //        const aboutContent = document.querySelector('.about-content');
               const videoContainer = document.querySelector('.intro-video-display');
               const video = document.querySelector('.intro-video-display video');
               
@@ -74,7 +55,7 @@
                   videoContainer.classList.remove('scaled-video');  // Reset video scaling
               }
           });
-      });
+      });*/
   
       function CloseVideo() {
           const video = document.querySelector('.bottom-left-video');
@@ -138,12 +119,18 @@
             }
           });
         
-        
-          
-        
-        
         });
-              
+        
+
+        //info panel
+        function openInfoPanel() {
+          document.getElementById("infoPanel").classList.add("active");
+        }
+        
+        // Function to close the info panel
+        function closeInfoPanel() {
+          document.getElementById("infoPanel").classList.remove("active");
+        }
   
   
   </script>

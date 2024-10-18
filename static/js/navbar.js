@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
 
-  const reviewsScroll = document.querySelector('.reviews-scroll');
+  const reviewsScroll = document.querySelector('.d-flex justify-content-between');
   const reviewsContainer = document.querySelector('.reviews-container');
 
   // Set the animation direction based on the scroll position

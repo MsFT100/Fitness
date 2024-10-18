@@ -3,7 +3,7 @@
 {% block content %}
 
 <section class="container-xxl" id='section-1'>
-    <div class="section-home">
+    <div class="section-about">
         <div class="overlay">
             <!-- Your content goes here -->
             <div class="index-content" id="content-index">
@@ -59,7 +59,7 @@
         </div>
         <div class="about-page-view">
             <div class="container">
-                <img src="{% static '/images/profile_mimic.png' %}" alt="">
+                <img src="{% static '/images/PlaceholderImage.png' %}" alt="">
             </div>
         </div>
     </div>
@@ -67,42 +67,23 @@
 
 <!-- Another section to scroll to -->
 <section class="container-xxl" id="section-3">
-      <!-- Reviews section -->
-      <div class="reviews-container">
-        <div class="container">
-            <h2>Training Highlights</h2>
-            <p>Explore my journey and client success stories here</p>
+    <!-- Reviews section -->
+    <div class="reviews-container">
+      <div class="container">
+        <h2>Training Highlights</h2>
+        <p>Explore my journey and client success stories here</p>
+      </div>
+      <div class="reviews-scroll">
+        <div class="scroll-content">
+          <img src="{% static '/images/phot1.jpg' %}" alt="Reviewer Image">
+          <img src="{% static '/images/phot2.jpg' %}" alt="Reviewer Image">
+          <img src="{% static '/images/PlaceholderImage.png' %}" alt="Reviewer Image">
+          <img src="{% static '/images/phot1.jpg' %}" alt="Reviewer Image">
         </div>
-        <div class="reviews-scroll">
-            
-            <div class="d-flex justify-content-around">
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                    
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                
-            
-            
-                
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">  
-            
-            
-                
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                    
-                
-                
-                    
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-                    
-                
-            </div>
-            <!-- Repeat for more reviews -->
-        </div>
+      </div>
     </div>
-</section>
+  </section>
+  
 
 <!-- Book section -->
 <section class="container-xxl" id="section-2">

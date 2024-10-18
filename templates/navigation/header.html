@@ -65,7 +65,7 @@
                 <li>
                     <h2>WORKOUTS</h2>
                     <ul>
-                        <li>PHOEBE CLUB</li>
+                        <li> <a href="{% url "club" %}">PHOEBE CLUB</a> </li>
                         <li><a href="{% url "session" %}">SESSIONS</a></li>
                     </ul>
                 </li>
@@ -92,5 +92,24 @@
     
 </div>
 
-
+<script>
+    // Animate the header based on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      var prevScrollpos = window.pageYOffset;
+      console.log("@@@@");
+      // Event listener for the scroll event
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        
+        // Logic to hide or show the navbar based on scroll direction
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0"; // Show navbar
+          
+        } else {
+          document.getElementById("navbar").style.top = "-50px"; // Hide navbar
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    });
+  </script>
 {% endblock content %}

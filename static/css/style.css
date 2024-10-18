@@ -46,7 +46,7 @@ header{
 .container-xxl {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    color: #F5F5F5;
+    color: #FCF9E8;
     height: max-content;
 }
 /* nav bar and menu*/
@@ -77,7 +77,7 @@ header{
     align-items: center;
     justify-content: center;
     list-style: none;
-    margin-right: 20px;
+    margin: 6px;
 }
 .signInBtn{
     background-color: black;
@@ -204,18 +204,34 @@ header{
 .section-about{
     width: 100%;
     height: 100vh;
+    background-image: url(/static/images/about-bg.jpg);
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: aqua;
 }
+.section-club{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/static/images/phot3-bg.jpg);
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
 .overlay{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
     width: 100%;
-    background-color: #00000030;
     align-items: center;
     position: relative;
     z-index: 2;
 }
+
 .overlay-2{
     display: flex;
     flex-direction: column;
@@ -460,24 +476,23 @@ header{
 }
 
 .review-card {
-    min-width: 350px; /* Minimum width for each review card */
-    max-width: 400px; /* Set a max width to maintain the card's size */
-    max-height: 700px;
-    margin-right: 20px; /* Space between cards */
-    background-color: #F5F5F5; /* Background for cards */
-    border-radius: none; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    padding: 20px; /* Padding inside cards */
-    scroll-snap-align: start; /* Align cards for scrolling */
-    display: flex; /* Make it a flex container */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align the contents */
+     /* Minimum width for each review card */
+     max-width: 400px; /* Set a max width to maintain the card's size */
+     max-height: 600px;
+     margin-right: 20px; /* Space between cards */
+     /* Background for cards */
+      /* Rounded corners */
+      /* Shadow effect */
+      /* Padding inside cards */
+     scroll-snap-align: start; /* Align cards for scrolling */
+     display: flex; /* Make it a flex container */
+     flex-direction: column; /* Stack elements vertically */
+     align-items: center; /* Center align the contents */
 }
-
-.review-card img {
-    width: 150px; /* Make the image full width of the card */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 40px; /* Rounded corners for the image */
+.profile-img{
+    width: 30% !important;;
+    height: auto;
+    border-radius: 40px;
 }
 
 .review-text {
@@ -499,6 +514,10 @@ header{
 .reviews-container {
     padding: 20px;
 }
+.reviews-container p{
+    color: black;
+    text-align: center;
+}
 
 .reviews-title {
     text-align: center;
@@ -511,10 +530,31 @@ header{
     overflow-x: auto;
     scrollbar-color: #000000 white; /* Custom scrollbar colors */
     scrollbar-width: thin; /* For Firefox */
+    margin: 1rem;
     gap: 20px; /* Space between reviews */
     transition: transform 0.5s ease-in-out;
 }
+.scroll-content {
+  display: flex;
+  gap: 20px; /* Adjust gap between images */
+  width: max-content; /* Allow the content to expand with all images */
+  animation: scroll-left-right 10s linear infinite alternate; /* Infinite ping-pong animation */
+}
+.scroll-content-review {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    /*animation: scroll-left-right 800.3s linear infinite alternate;*/
+}
 
+@keyframes scroll-left-right {
+  0% {
+    transform: translateX(0); /* Start from the initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide left to the end */
+  }
+}
 .review-card {
     min-width: 300px;
     background-color: #f9f9f9;
@@ -938,8 +978,8 @@ header{
     text-align: center;
     color: black;
   }
-  .reviews-container .container p{text-align: center;}
-  .reviews-scroll img{padding: 20px;width: 400px;height: 400px;border-radius: 30px;}
+  
+  .reviews-scroll img{padding: .2rem;width: 100%;height: auto;border-radius: 30px;}
   /* Basic styling for the placeholder text */
     ::placeholder {
         color: gray;
@@ -990,32 +1030,134 @@ header{
   .nav-menu-right video{
     cursor: pointer;
 }
+.image-club-left{width: 400px;height: 500px;}
 
-/* Animation for scrolling from left to right */
-.reviews-scroll.animate-left {
-    animation: scroll-left 10s linear infinite;
+.image-club-left:hover{
+    cursor:pointer;
+}
+.image-club{
+    width: 250px;
+}
+.image-club:hover{
+    cursor:pointer;
+}
+.container-club{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-club h1{
+    color: black;
+    font-size: x-large;
+    font-weight: 800;
+}
+.club-container{
+    height: 600px;
+    width: 100vw;
+    background-color: #EDEDE9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.club-container h2{
+    text-align: center;
+    color: black;
+    font-size: 45px;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.bottom-container p{
+   text-align: left;
+}
+.upper-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.top-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-h5{color: white;text-align: left;padding-top: 20%;width: 90%;height: 80%;}
+.title-h1{
+    color: white;
+    text-align: left;
+    width: 90%;
+}
+/* Initial hidden state of the panel */
+.info-panel {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start hidden off-screen */
+    width: 100%; /* Adjust width as necessary */
+    height: 100%;
+    background-color: #F5EBE0;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1002; /* Ensure it sits above other content */
+    overflow-y: auto; /* Allow scrolling if content is longer */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   
-  /* Animation for scrolling from right to left */
-  .reviews-scroll.animate-right {
-    animation: scroll-right 10s linear infinite;
+  /* Active class when panel is visible */
+  .info-panel.active {
+    right: 0; /* Slide the panel into view */
   }
   
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  /* X button to close the panel */
+  .info-panel .close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
   }
   
-  @keyframes scroll-right {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  /* Styling for the content inside the panel */
+  .info-panel .panel-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 70%;
+    max-: 100%;
   }
+  .info-panel .panel-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .info-panel .panel-content .bottom-container{
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .panel-content h2{
+    font-size: x-large;
+    font-weight: 600;
+    text-align: end;
+    margin-top: 1rem;
+  }
+  .join-btn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: solid;
+  }
+  
+  
   

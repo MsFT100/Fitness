@@ -15,3 +15,6 @@ class BookSessionsPage(View):
 class PrivateSessionsPage(View):
     def get(self, request):
         return render(request, 'pages/private_session.html')
+class PhoebeClubPage(View):
+    def get(self, request):
+        return render(request, 'pages/phoebe_club.html')

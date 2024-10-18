@@ -3,20 +3,18 @@
 {% block content %}
 
 <section class="container-xxl" id='section-1'>
-    <div class="section-home">
+    <div class="section-club">
         <div class="overlay">
             <!-- Your content goes here -->
             <div class="index-content" id="content-index">
                 
-                <h5>Together</h5>
-                <h1>Stronger Together Now</h1>
+                <h3 class="title-h5">Together</h3>
+                <h1 class="title-h1">Stronger Together Now</h1>
             </div>
             
             
         </div>
     </div>
-    
-
     
 </section>
 
@@ -24,58 +22,82 @@
 
 <!-- Another section to scroll to -->
 <section class="container-xxl" id="section-2">
-      <!-- Reviews section -->
+      
       <div class="reviews-container">
-        <div class="container">
-            <h3>Book Session</h3>
+        <div class="container-club">
 
-            <p>Pilates By Pheobe has been dubbed the “best-kept secret in Zanzibar” thanks to Vogue. Pheobe’s exclusive private pilates studio, located in the heart of Zanzibar, offers an intimate setting for private and semi-private reformer-based classes.</p>
-        </div>
-        <div class="reviews-scroll">
-            
-            <div class="d-flex justify-content-between">
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
-
-                <img src="{% static '/images/ModelImage.jpg' %}" alt="Reviewer Image">
+            <div class="container " onclick="openInfoPanel()">
+                <div class="upper-container">
+                    <img class="image-club-left" src="{% static '/images/phot2.jpg' %}" alt="">
+                </div>
+                <div class="bottom-container">
+                    <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                    <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+                </div>
             </div>
-
-           
+            <div class="container" onclick="openInfoPanel()">
+                <div class="upper-container">
+                    <img class="image-club" src="{% static '/images/phot1.jpg' %}" alt="">
+                </div>
+                <div class="bottom-container">
+                    <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                    <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+                </div>
+            </div>
+            <div class="container" onclick="openInfoPanel()">
+                <div class="upper-container">
+                    <img class="image-club" src="{% static '/images/phot2.jpg' %}" alt="">
+                </div>
+                <div class="bottom-container">
+                    <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                    <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+                </div>
+            </div>
+        
         </div>
+        
     </div>
 </section>
 
+<section class="container-xxl" id="section-3">
+    <div class="club-container">
+        <h2>True Transformation starts with your first step</h2>
+        
+        
+    </div>
+</section>
+
+<!--Clinets-->
 <section class="container-xxl" id="section-3">
     <div class="reviews-container">
         <h2 class="reviews-title">Client Success</h2>
         <p>Transforming lives through personalized training experiences.</p>
         <div class="reviews-scroll">
             
-            <div class="d-flex justify-content-between">
+            <div class="scroll-content-review">
                 <div class="review-card">
                     <p class="review-text">"Animi pariatur velit, ullam tenetur optio adipisci dolores dolore..."</p>
-                    <img src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
+                    <img class="profile-img" src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
                     <p class="reviewer-name">- John Doe</p>
                 </div>
                 <div class="review-card">
                     <p class="review-text">"Animi pariatur velit, ullam tenetur optio adipisci dolores dolore..."</p>
-                    <img src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
+                    <img class="profile-img" src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
                     <p class="reviewer-name">- Jane Smith</p>
                 </div>
                 <div class="review-card">
                     <p class="review-text">"Animi pariatur velit, ullam tenetur optio adipisci dolores dolore laboriosam accusamus quasi et, voluptates totam aut velit distinctio eligendi porro iusto illo corrupti aliquid, adipisci debitis ipsa"</p>
-                    <img src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
+                    <img class="profile-img" src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
                     <p class="reviewer-name">- Emily Davis</p>
                 </div>
                 <div class="review-card">
                     <p class="review-text">"Animi pariatur velit, ullam tenetur optio adipisci dolores dolore laboriosam accusamus quasi et, voluptates totam aut velit distinctio eligendi porro iusto illo corrupti aliquid, adipisci debitis ipsa"</p>
-                    <img src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
+                    <img class="profile-img" src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
                     <p class="reviewer-name">- Michael Brown</p>
                 </div>
                 <div class="review-card">
                     <p class="review-text">" Animi pariatur velit, ullam tenetur optio adipisci dolores dolore laboriosam accusamus quasi et, voluptates totam aut velit distinctio eligendi porro iusto illo corrupti aliquid, adipisci debitis ipsa"</p>
-                    <img src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
+                    <img class="profile-img" src="{% static '/images/profile_mimic.png' %}" alt="Reviewer Image">
                     <p class="reviewer-name">- Sarah Wilson</p>
                 </div>
             </div>
@@ -84,114 +106,70 @@
     </div>
 </section>
 
-<!-- Book section -->
-<section class="container-xxl" id="section-4">
-    <div class="section-pricing-plans">
-        <div class="overlay-pricing-plans">
-            <div class="content-pricing-plans">
-                <h2>Let's Transform Your Fitness Journey</h2>
-                <h1>Pricing Plans</h1>
-                <p>Choose The perfect personal training package for you.</p>
-            </div>
-            
-           
+<!-- Another section to scroll to -->
+<section class="container-xxl" id="section-2">
+    <!-- Reviews section -->
+    <div class="reviews-container">
+      <div class="container-club">
 
-            <div class="pricing-cards">
-                <div class="d-flex justify-content-around">
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Free Trial</h5>
-                            <p class="card-text">7 DAYS</p>
-                            <p class="card-text">No payment info collectes until AFTER your trial ends</p>
-                            <ul>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Explore Introductory welcome workouts</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Customized workout plans</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Nutrition guidance included</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Explore all communities</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Complete as many workouts as you'd like</li>
-                            </ul>
-                            <a href="#" class="btn-pricing">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Pro-Plan Monthly</h5>
-                            <p class="card-text">$29.99/mo</p>
-                            <p class="card-text">Gets Result without planning workouts.</p>
-                            <ul>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Group training sessions</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Weekely Progress tracking</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Access to online resources</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Monthly fitness assessments</li>
-                            </ul>
-                            <a href="#" class="btn-pricing">Get Started</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Pro-Plan Annual</h5>
-                            <p class="card-text">$14.99/month</p>
-                            <p class="card-text">($179.99 yearly)</p>
-                            <p class="card-text">Maximum flexibility, save Monthly</p>
-                            <ul>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Unlimited training sessions</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Personalized meal plan</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    24/7 monthly support available</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Exclusive member events</li>
-                                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.7722 8.51599L10.1722 19.116C10.0783 19.2107 9.95054 19.2639 9.81722 19.2639C9.6839 19.2639 9.5561 19.2107 9.46222 19.116L4.07222 13.726C3.97756 13.6322 3.92432 13.5044 3.92432 13.371C3.92432 13.2377 3.97756 13.1099 4.07222 13.016L4.77222 12.316C4.8661 12.2214 4.9939 12.1681 5.12722 12.1681C5.26054 12.1681 5.38834 12.2214 5.48222 12.316L9.81222 16.646L19.3622 7.09599C19.56 6.9042 19.8744 6.9042 20.0722 7.09599L20.7722 7.80599C20.8669 7.89987 20.9201 8.02767 20.9201 8.16099C20.9201 8.29431 20.8669 8.4221 20.7722 8.51599Z" fill="black"/>
-                                    </svg>
-                                    Advanced fitness tracking</li>
-                            </ul>
-                            
-                            <a href="#" class="btn-pricing">Get Started</a>
-                        </div>
-                    </div>
-                </div>
+         
+          <div class="container" onclick="openInfoPanel()">
+              <div class="upper-container">
+                  <img class="image-club" src="{% static '/images/phot2.jpg' %}" alt="">
+              </div>
+              <div class="bottom-container">
+                  <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                  <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+              </div>
+          </div>
+          <div class="container" onclick="openInfoPanel()">
+              <div class="upper-container">
+                  <img class="image-club" src="{% static '/images/phot1.jpg' %}" alt="">
+              </div>
+              <div class="bottom-container">
+                  <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                  <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+              </div>
+          </div>
+
+          <div class="container" onclick="openInfoPanel()">
+            <div class="upper-container">
+                <img class="image-club-left" src="{% static '/images/phot2.jpg' %}" alt="">
             </div>
+            <div class="bottom-container">
+                <h1>Join Our Exciting Group Classes for All Fitness Levels!</h1>
+                <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+            </div>
+          </div>
+      </div>
+      
+  </div>
+
+  <!-- Sliding Info Panel -->
+      <div class="info-panel" id="infoPanel">
+        <button class="close-btn" onclick="closeInfoPanel()">
+            <img src="{% static '/images/Close-Icon.svg' %}" alt="Close">
+        </button>
+        <div class="panel-content">
+
+            <img src="{% static '/images/Gym-HD-Background-.jpg' %}" alt="Image Here">
+            <h2>Join Our Exciting group classes for all fitness Levels!</h2>
+            <p>Our group classes are designed to fit your busy schedule, offering sessions on weekdays and weekends. 
+                Each class lasts for 60 minutes, ensuring a comprehensive workout that targets all major muscle groups.</p>
+            <div class="bottom-container">
+                <button class="join-btn">Join</button>
+            </div>
+          <!-- Add more detailed information here -->
         </div>
-    </div>
+      </div>
 </section>
 
+<!-- Another section to scroll to -->
+<section class="container-xxl" id="section-2">
+    <div class="container">
+        <h1 class="reviews-title"></h1>
+    </div>
+</section>
 
 <script>
     const reviewsScroll = document.querySelector('.reviews-scroll');
