@@ -979,7 +979,7 @@ header{
     color: black;
   }
   
-  .reviews-scroll img{padding: .2rem;width: 100%;height: auto;border-radius: 30px;}
+  .reviews-scroll img{padding: .2rem;width: 50%;height: auto;border-radius: 30px;}
   /* Basic styling for the placeholder text */
     ::placeholder {
         color: gray;
